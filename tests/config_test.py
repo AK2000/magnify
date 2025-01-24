@@ -8,7 +8,7 @@ from magnify.config import FilterConfig
 from magnify.config import MonitorConfig
 from magnify.config import SensorConfig
 from magnify.config import StoreConfig
-from magnify.filters import Downsample
+from magnify.filters.basic import Downsample
 from magnify.sensor.rapl import RaplSysfsSensor
 from magnify.store.file import FileStore
 
@@ -40,7 +40,7 @@ def test_get_store_type(kind: str, expected: type) -> None:
     ('kind', 'expected'),
     (
         ('downsample', Downsample),
-        ('magnify.filters.Downsample', Downsample),
+        ('magnify.filters.basic.Downsample', Downsample),
     ),
 )
 def test_get_filter_type(kind: str, expected: type) -> None:

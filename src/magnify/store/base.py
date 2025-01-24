@@ -3,7 +3,7 @@ from __future__ import annotations
 from abc import ABC
 from abc import abstractmethod
 
-from magnify.filters import BaseFilter
+from magnify.filters.base import BaseFilter
 from magnify.types import TimedMeasurement
 from magnify.types import TimedTask
 

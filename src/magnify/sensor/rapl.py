@@ -4,7 +4,7 @@ import datetime
 import os
 import re
 
-from magnify.sensor import BaseSensor
+from magnify.sensor.base import BaseSensor
 from magnify.types import TimedMeasurement
 
 

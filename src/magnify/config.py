@@ -13,9 +13,9 @@ from pydantic import ConfigDict
 from pydantic import Field
 
 from magnify import MagnifyMonitor
-from magnify.filters import BaseFilter
-from magnify.sensor import BaseSensor
-from magnify.store import BaseStore
+from magnify.filters.base import BaseFilter
+from magnify.sensor.base import BaseSensor
+from magnify.store.base import BaseStore
 from magnify.utils import dump
 from magnify.utils import load
 
@@ -87,7 +87,7 @@ class SensorConfig(BaseModel):
         return sensor_type(**self.options)
 
 
-_KNOWN_FILTERS = {'magnify.filters.Downsample'}
+_KNOWN_FILTERS = {'magnify.filters.basic.Downsample'}
 
 
 class FilterConfig(BaseModel):

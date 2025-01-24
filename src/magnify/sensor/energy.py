@@ -6,7 +6,7 @@ import numpy as np
 import polars
 from sklearn.linear_model import ElasticNet
 
-from magnify.sensor import BaseSensor
+from magnify.sensor.base import BaseSensor
 from magnify.types import TimedMeasurement
 
 # Default events to use to predict energy on an intel x86 machine

@@ -7,8 +7,8 @@ import time
 import zmq
 from pydantic import AnyUrl
 
-from magnify.sensor import BaseSensor
-from magnify.store import BaseStore
+from magnify.sensor.base import BaseSensor
+from magnify.store.base import BaseStore
 from magnify.types import TimedMeasurement
 from magnify.types import TimedTask
 

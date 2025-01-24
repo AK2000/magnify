@@ -7,7 +7,7 @@ from typing import Any
 import polars
 import psutil
 
-from magnify.sensor import BaseSensor
+from magnify.sensor.base import BaseSensor
 from magnify.types import TimedMeasurement
 
 DEFAULT_READINGS = [

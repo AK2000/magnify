@@ -7,8 +7,8 @@ from typing import TextIO
 
 import polars
 
-from magnify.filters import BaseFilter
-from magnify.store import BaseStore
+from magnify.filters.base import BaseFilter
+from magnify.store.base import BaseStore
 from magnify.types import TimedMeasurement
 from magnify.types import TimedTask
 

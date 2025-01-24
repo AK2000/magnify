@@ -7,7 +7,7 @@ import performance_features
 import polars
 import psutil
 
-from magnify.sensor import BaseSensor
+from magnify.sensor.base import BaseSensor
 from magnify.types import TimedMeasurement
 
 # Default events to use to predict energy on an intel x86 machine
